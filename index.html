@@ -8,40 +8,47 @@
   <title>Document</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
 </head>
 
 <body class="bg-light" data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
-  <nav class="navbar navbar-expand-sm bg-light navbar-light justify-content-end fixed-top py-2 px-5 bg-white">
+  <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top py-2 px-5 bg-white">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">My Logo</a>
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="#section1">Portfolio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#section2">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#section3">Contact</a>
-        </li>
-      </ul>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#section1">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section2">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section3">Contact</a>
+          </li>
+        </ul>
+    
+      </div>
     </div>
   </nav>
   <div class="row bg-white p-5">
     <div class="container-fluid p-5 w-50 h-auto">
-    <h1>I’m Mariane Glad to see you!</h1>
-    <p>I’m a software developer! I can help you build a product , feature or website Look through some of my work and
-      experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
-    <p>LET’S CONNECT</p>
+      <h1>I’m Mariane Glad to see you!</h1>
+      <p>I’m a software developer! I can help you build a product , feature or website Look through some of my work and
+        experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
+      <p>LET’S CONNECT</p>
     </div>
   </div>
   <div id="section1" class="container p-5">
-    <div class="d-flex mb-5 p-5 bg-white">
-      <img src="./img/work1.png" alt="">
-      <div class="p-5">
+    <div class="row mb-5 p-5 bg-white">
+      <img src="./img/work1.png" alt="" class="img-fluid col-md-6">
+      <div class="p-5 col-md-6">
         <h1>Tonic</h1>
         <p>A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
         <ul>
@@ -52,8 +59,8 @@
         <button type="button" class="btn btn-secondary">see project</button>
       </div>
     </div>
-    <div class="d-flex mb-5 p-5 bg-white">
-      <div class="p-5">
+    <div class="row mb-5 p-5 bg-white">
+      <div class="col-md-6 p-5">
         <h1>Multi-Post Stories</h1>
         <p>Experimental content creation feature that allows users to add to an existing story over the course of a day
           without spamming their friends.</p>
@@ -62,13 +69,13 @@
           <li class="badge bg-primary">css</li>
           <li class="badge bg-primary">javascript</li>
         </ul>
-        <button  type="button" class="btn btn-secondary">see project</button>
+        <button type="button" class="btn btn-secondary">see project</button>
       </div>
-      <img src="./img/work2.png" alt="">
+      <img src="./img/work2.png" alt="" class="col-md-6 img-fluid">
     </div>
-    <div class="d-flex mb-5 p-5 bg-white">
-      <img src="./img/work3.png" alt="">
-      <div class="p-5">
+    <div class="row mb-5 p-5 bg-white">
+      <img src="./img/work3.png" alt="" class="img-fluid col-md-6">
+      <div class="p-5 col-md-6">
         <h1>Facebook 360</h1>
         <p>Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360
           photos and videos on Gear VR.</p>
@@ -77,11 +84,11 @@
           <li class="badge bg-primary">css</li>
           <li class="badge bg-primary">javascript</li>
         </ul>
-        <button  type="button" class="btn btn-secondary">see project</button>
+        <button type="button" class="btn btn-secondary">see project</button>
       </div>
     </div>
-    <div class="d-flex mb-5 p-5 bg-white">
-      <div class="p-5">
+    <div class="row mb-5 p-5 bg-white">
+      <div class="p-5 col-md-6">
         <h1>Uber Navigation</h1>
         <p>A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer:
           your car.</p>
@@ -90,9 +97,9 @@
           <li class="badge bg-primary">css</li>
           <li class="badge bg-primary">javascript</li>
         </ul>
-        <button  type="button" class="btn btn-secondary">see project</button>
+        <button type="button" class="btn btn-secondary">see project</button>
       </div>
-      <img src="./img/work4.png" alt="">
+      <img src="./img/work4.png" alt="" class="img-fluid col-md-6">
     </div>
     <div id="section2" class="d-flex bg-white">
       <div class="p-5 col-6">
@@ -101,7 +108,7 @@
           work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
         </p>
         <p>LET´S CONNECT</p>
-        <button  type="button" class="btn btn-secondary">Get My Resume</button>
+        <button type="button" class="btn btn-secondary">Get My Resume</button>
       </div>
       <div class="p-5 col-4">
         <h2>Languages</h2>
